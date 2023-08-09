@@ -1,0 +1,8 @@
+kind: Kustomization
+helmCharts:
+  - name: karpenter
+    version: v0.27.0
+    repo: oci://public.ecr.aws/karpenter/karpenter
+    releaseName: karpenter
+    namespace: karpenter
+    includeCRDs: true
